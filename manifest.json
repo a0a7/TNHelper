@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "TNHelper",
+    "version": "1.0",
+    "description": "Helper for test-ninjas.com",
+    "permissions": ["scripting"],
+    "host_permissions": [
+      "https://test-ninjas.com/*",
+      "https://www.test-ninjas.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://test-ninjas.com/*", "https://www.test-ninjas.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
